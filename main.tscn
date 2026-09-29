@@ -1,7 +1,16 @@
 [gd_scene format=3 uid="uid://bj3dnhhkgj3ee"]
 
+[ext_resource type="Texture2D" uid="uid://i2o1nvbw06w5" path="res://scenes/Standard sprites upd.png" id="1_ig7tw"]
+
 [node name="Main" type="Node2D" unique_id=1876620807]
 
 [node name="Test" type="Node2D" parent="." unique_id=1917606680]
 
 [node name="Camera2D" type="Camera2D" parent="Test" unique_id=1439560773]
+
+[node name="bichito" type="Sprite2D" parent="." unique_id=2142376566]
+position = Vector2(2, 2.0000005)
+scale = Vector2(5.2, 5.611111)
+texture = ExtResource("1_ig7tw")
+region_enabled = true
+region_rect = Rect2(112.48677, 64, 16.017502, 16.520844)
