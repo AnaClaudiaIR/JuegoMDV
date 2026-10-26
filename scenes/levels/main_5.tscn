@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cu18plqyhnnmg"]
+
+[ext_resource type="Script" uid="uid://b15065dblq34u" path="res://scripts/main_5.gd" id="1_xajj7"]
+[ext_resource type="PackedScene" uid="uid://db51dufovtkvh" path="res://scenes/levels/Player.tscn" id="3_xxuvy"]
+
+[node name="Main" type="Node2D" unique_id=534956234]
+script = ExtResource("1_xajj7")
+
+[node name="Player" parent="." unique_id=1054794496 instance=ExtResource("3_xxuvy")]
+position = Vector2(0, 1)
+
+[node name="RoundTimer" type="Timer" parent="." unique_id=1187932798]
+wait_time = 5.0
+one_shot = true

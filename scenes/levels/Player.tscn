@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://db51dufovtkvh"]
+
+[ext_resource type="Texture2D" uid="uid://df4j3ab246ycp" path="res://icon.svg" id="1_0fpmp"]
+[ext_resource type="Script" uid="uid://v60sdkv16chn" path="res://scripts/player.gd" id="1_jalre"]
+
+[node name="Player" type="Area2D" unique_id=1054794496]
+script = ExtResource("1_jalre")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=777858809]
+position = Vector2(1, 0)
+texture = ExtResource("1_0fpmp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=650681652]
