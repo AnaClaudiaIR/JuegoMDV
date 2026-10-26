@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://db1qbjm8i11oy"]
+
+[ext_resource type="Texture2D" uid="uid://i2o1nvbw06w5" path="res://scenes/players/Standard sprites upd.png" id="1_d1kyj"]
+[ext_resource type="Script" uid="uid://4naibsd4c8lw" path="res://scripts/bichitoScript2.gd" id="2_fy4nm"]
+
+[node name="Main2" type="Node2D" unique_id=26014298]
+
+[node name="Test2" type="Node2D" parent="." unique_id=571775962]
+
+[node name="Camera2D" type="Camera2D" parent="Test2" unique_id=2070038364]
+
+[node name="bichito2" type="Sprite2D" parent="." unique_id=363854154]
+position = Vector2(2, 2.0000005)
+scale = Vector2(5.2, 5.611111)
+texture = ExtResource("1_d1kyj")
+region_enabled = true
+region_rect = Rect2(112.48677, 64, 16.017502, 16.520844)
+script = ExtResource("2_fy4nm")
