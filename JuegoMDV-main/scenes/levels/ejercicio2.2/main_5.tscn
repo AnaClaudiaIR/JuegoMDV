@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cu18plqyhnnmg"]
+
+[ext_resource type="Script" uid="uid://b15065dblq34u" path="res://scripts/ejercicio2.2/main_5.gd" id="1_g1qc0"]
+[ext_resource type="PackedScene" uid="uid://db51dufovtkvh" path="res://scenes/levels/ejercicio2.3/Player.tscn" id="2_at22t"]
+[ext_resource type="Texture2D" uid="uid://df4j3ab246ycp" path="res://icon.svg" id="3_h67nc"]
+[ext_resource type="PackedScene" uid="uid://c450ntxg41yos" path="res://scenes/levels/ejercicio2.3/Target.tscn" id="4_kf76a"]
+
+[node name="Main" type="Node2D" unique_id=534956234]
+script = ExtResource("1_g1qc0")
+
+[node name="Player" parent="." unique_id=1054794496 instance=ExtResource("2_at22t")]
+position = Vector2(0, 1)
+
+[node name="RoundTimer" type="Timer" parent="." unique_id=1187932798]
+wait_time = 10.0
+one_shot = true
+
+[node name="Target" type="Sprite2D" parent="." unique_id=775304643]
+texture = ExtResource("3_h67nc")
+flip_v = true
+
+[node name="StatusLabel" type="Label" parent="." unique_id=1743233130]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Sprite2D" parent="." unique_id=914825549 instance=ExtResource("4_kf76a")]
